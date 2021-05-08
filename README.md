@@ -99,6 +99,45 @@ src/
     SomeComponent.spec.jsx
 ```
 
+#### Use `Base`, `The`, `App` naming convention for reusable components
+
+```
+# Bad
+
+Button/
+Dropdown/
+Footer/
+Header/
+Icon/
+Sidebar/
+Typography/
+```
+
+```
+# Good
+
+BaseButton/
+BaseDropdown/
+BaseIcon/
+BaseTypography/
+TheFooter/
+TheHeader/
+TheSidebar/
+```
+
+
+```
+# Good
+
+AppFooter/
+AppHeader/
+AppSidebar/
+BaseButton/
+BaseDropdown/
+BaseIcon/
+BaseTypography/
+```
+
 #### Underscore the aggregational non-component directories
 
 ```
@@ -147,6 +186,8 @@ src/
 tests/
   unit/
     MyComponent.spec.jsx
+storybook/
+  MyComponent.stories.mdx
 ```
 
 
@@ -158,7 +199,9 @@ src/
     MyComponent.jsx
     MyComponent.scss
     MyComponent.spec.jsx
+    MyComponent.stories.mdx
     MyComponentRelatedImg.svg
+
 ```
 
 ```
@@ -167,14 +210,20 @@ src/
 src/
   MyComponent/
     _tests/
+      MyComponentMocksData.jsx
       MyComponentMocks.jsx
-      MyComponentData.jsx
       MyComponent.spec.jsx  
     MyComponent.jsx
     MyComponent.scss
+    MyComponent.stories.mdx
     MyComponentRelatedImg.svg
 ```
 
 In the bad example the component related files are scattered across the project directories, so when working on that component we will have to jump back-end fourth through directories which is super inefficient. 
 
 In contrast in the good example all the files related to the component are under the hand, which makes `MyComponent` more maintainable and self-contained.
+
+
+
+#### Place reusable components into `_components` or `_common` directory
+
