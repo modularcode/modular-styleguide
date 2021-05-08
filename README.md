@@ -1,4 +1,4 @@
-# ModularStyleguide
+# Modular Styleguide
 
 > An opinonated guide about how to organize your app code in modular way
 
