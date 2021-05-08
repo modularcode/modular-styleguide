@@ -5,7 +5,7 @@
 
 ## Naming conventions
 
-#### Use **PascalCase** for the component-related filenames and their directories, use **camelCase** for the rest of the files.
+### Use **PascalCase** for the component-related filenames and their directories, use **camelCase** for the rest of the files.
 
 ```
 # Bad
@@ -53,7 +53,7 @@ src/
     User.ts
 ```
 
-#### Use file extensions that make more sense (assuming SomeComponent contains **JSX** markup)
+### Use file extensions that make more sense (assuming SomeComponent contains **JSX** markup)
 
 ```
 # Bad
@@ -75,7 +75,7 @@ src/
     SomeComponent.jsx
 ```
 
-#### Name the test files with `.test.{extension}` or `.spec.{extension}`
+### Name the test files with `.test.{extension}` or `.spec.{extension}`
 
 ```
 # Bad
@@ -99,7 +99,7 @@ src/
     SomeComponent.spec.jsx
 ```
 
-#### Use `Base`, `The`, `App` naming convention for reusable components
+### Use `Base`, `The`, `App` naming convention for reusable components
 
 ```
 # Bad
@@ -138,7 +138,7 @@ BaseIcon/
 BaseTypography/
 ```
 
-#### Underscore the aggregational non-component directories
+### Underscore the aggregational non-component directories
 
 ```
 # Bad
@@ -171,7 +171,7 @@ In contrast in the good example we can immediately visually distinguish Componen
 
 ## Code organization
 
-#### Keep components self-contained
+### Keep components self-contained
 
 ```
 # Bad
@@ -225,7 +225,7 @@ In contrast in the good example all the files related to the component are under
 
 
 
-#### Place reusable components into  `_common` or `_components` directory
+### Place reusable components into  `_common` or `_components` directory
 
 
 ```
@@ -273,7 +273,7 @@ src/
 ```
 
 
-#### The hierarchy of components should represent the app hierarchy
+### The hierarchy of components should represent the app hierarchy
 
 ```
 # Bad
