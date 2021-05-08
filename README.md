@@ -271,3 +271,68 @@ src/
     TheHeader/
       TheHeader.jsx
 ```
+
+
+#### The hierarchy of components should represent the app hierarchy
+
+```
+# Bad
+
+src/
+  components/
+    Button/
+    Title/
+    
+  pages/
+    AuthPage/
+    AuthLoginPage/
+    AuthSignupPage/
+    BlogPage/
+    BlogArticlesPage/
+    BlogArticlePage/
+    BlogArticleEditPage/
+    DocsPage/
+    TutorialPage/
+    TutorialItemPage/
+    
+  templates/
+    Header/
+    Sidebar/
+    Footer/
+    
+  utils/
+    auth.js
+  
+```
+
+
+```
+# Good
+
+src/
+  _common/
+    BaseButton/
+    BaseTitle/
+    TheHeader/
+    TheSidebar/
+    TheSidebar/
+    
+  AuthPage/
+    _common/
+      AuthHeader/
+    _services/
+      authService.js
+    AuthLoginPage/
+    AuthSignupPage/
+    
+  BlogPage/
+    BlogListPage/
+    BlogItemPage/
+    BlogEditorPage/
+    
+  DocsPage/
+  
+  TutorialsPage/
+    TutorialsListPage/
+    TutorialsItemPage/
+```
