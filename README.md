@@ -225,5 +225,49 @@ In contrast in the good example all the files related to the component are under
 
 
 
-#### Place reusable components into `_components` or `_common` directory
+#### Place reusable components into  `_common` or `_components` directory
 
+
+```
+# Bad
+
+src/
+  components/
+    BaseButton.jsx
+    TheHeader.jsx
+```
+
+
+```
+# Bad
+
+src/
+  components/
+    BaseButton/
+      BaseButton.jsx
+    TheHeader/
+      TheHeader.jsx
+```
+
+
+```
+# Good
+
+src/
+  _components/
+    BaseButton/
+      BaseButton.jsx
+    TheHeader/
+      TheHeader.jsx
+```
+
+```
+# Good
+
+src/
+  _common/
+    BaseButton/
+      BaseButton.jsx
+    TheHeader/
+      TheHeader.jsx
+```
