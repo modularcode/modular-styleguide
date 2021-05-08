@@ -9,6 +9,7 @@
 
 ```
 # Bad
+
 src/
   Main.js
   someComponent/
@@ -17,6 +18,7 @@ src/
   
 ```
 # Good
+
 src/
   main.js
   otherNonComponentFile.js
@@ -29,6 +31,7 @@ src/
 
 ```
 # Bad
+
 src/
   SomeComponent/
     SomeComponent.js
@@ -36,6 +39,7 @@ src/
 
 ```
 # Good
+
 src/
   SomeComponent/
     SomeComponent.tsx
@@ -68,3 +72,34 @@ src/
     SomeComponent.jsx
     SomeComponent.spec.jsx
 ```
+
+#### Underscore the aggregational non-component directories
+
+```
+# Bad
+
+src/
+  config/
+  layouts/
+  OtherComponent/
+  services/
+  SomeComponent/
+  styles/
+```
+
+
+```
+# Good
+
+src/
+  _config/
+  _layouts/
+  _services/
+  _styles/
+  OtherComponent/
+  SomeComponent/
+```
+
+In the bad example we need to spend more time figuring out what type of directories are responsible for which things. Also the ordering is messed up, we have organizational directories like `services/` in between two component directories.
+
+In contrast in the good example we can immediately visually distinguish ComponentDirectories from non-component directories. The IDEs will show the directories with underscore on top of the project file explorer which is very convenient.
