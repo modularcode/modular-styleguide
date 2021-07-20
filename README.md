@@ -219,7 +219,7 @@ src/
     MyComponentRelatedImg.svg
 ```
 
-In the bad example the component related files are scattered across the project directories, so when working on that component we will have to jump back-end fourth through directories which is super inefficient. 
+In the bad example the component related files are scattered across the project directories, so when working on that component we will have to jump back and forth through directories which is super inefficient. 
 
 In contrast in the good example all the files related to the component are under the hand, which makes `MyComponent` more maintainable and self-contained.
 
